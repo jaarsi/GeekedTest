@@ -12,6 +12,7 @@ dependencies = [
     "pycryptodome~=3.21.0",
     "requests~=2.32.3",
 ]
+includes = ["geekedtest"]
 
 [tool.uv.sources]
 ddddocr = { git = "https://github.com/sml2h3/ddddocr.git", rev = "main" }
