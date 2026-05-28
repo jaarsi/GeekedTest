@@ -1,0 +1,17 @@
+[project]
+name = "geekedtest"
+version = "v1.9.6"
+description = "Geetest v4 slide, icon, gobang & ai solver - 100% python implementation - no browser needed"
+readme = "readme.md"
+requires-python = ">=3.12"
+dependencies = [
+    "curl-cffi~=0.10.0",
+    "ddddocr",
+    "numpy~=2.2.1",
+    "opencv-python~=4.10.0.84",
+    "pycryptodome~=3.21.0",
+    "requests~=2.32.3",
+]
+
+[tool.uv.sources]
+ddddocr = { git = "https://github.com/sml2h3/ddddocr.git", rev = "main" }
