@@ -12,7 +12,14 @@ dependencies = [
     "pycryptodome~=3.21.0",
     "requests~=2.32.3",
 ]
-includes = ["geekedtest"]
+
+[build-system]
+requires = ["uv_build>=0.11.16,<0.12"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "geeked"
+module-root = ""
 
 [tool.uv.sources]
 ddddocr = { git = "https://github.com/sml2h3/ddddocr.git", rev = "main" }
